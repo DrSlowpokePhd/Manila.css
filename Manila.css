@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo|Chakra+Petch|Poppins|Raleway");
+
+* {
+    background-color: #f1d592;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes button {
+    from{background-color: #f1d592;}
+    to{background-color: #af9b6b;
+        border-width: 4px;
+    }
+}
+
+.header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: regular;
+    letter-spacing: 4px;
+    padding: 50px;
+    text-align: center;
+    font-size: 30pt;
+    background-color: inherit;
+    text-decoration: underline;
+}
+
+.minor-header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: regular;
+    letter-spacing: 4px;
+    padding: 50px;
+    text-align: left;
+    font-size: 20pt;
+    background-color: #f1d592;
+    text-decoration: underline;
+}
+
+div.padder100 {
+    padding: 100;
+}
+
+
+div.text-box {
+    overflow: hidden;
+    display: none;
+    background-color: #f1d592;
+    margin: auto;
+    text-align: center;
+    padding-left, padding-right: 5%;
+}
+
+.radio {
+    border-width: 4px;
+    background-color: #f1d592;
+}
+
+div.text-box-open {
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-left, padding-right: 5%;
+}
+
+div.text-box:focus{
+    display: block;
+}
+
+/*
+Link View
+*/
+.private-link {
+    font-family: 'Poppins';
+    font-size: 14pt;
+    text-align: center;
+    padding-top: 50%;
+}
+
+/*button CSS*/
+div.button{
+    text-align: center;
+}
+
+input.button {
+    text-align: center;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input.button:hover {
+    animation-name: button;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/*input.button:hover {
+    animation-name: button;
+    animation-duration: 1s;
+}*/
+
+/*textbox CSS*/
+input[type=text]{
+    border-width: 2px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: black;
+    border-color: black;
+}
+
+input[type=text]:focus {
+    animation-name: button;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+input[type=radio] {
+    text-align: right;
+}
+
+
+
+/*footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 8pt;
+    text-align: center;
+}
+
+div.flexbox {
+	background-color: #ffe096;
+	border-radius: 8px;
+}

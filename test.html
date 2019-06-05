@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Manila.css Test</title>
+		<link rel="stylesheet" href="Manila.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">>
+
+		</script>
+		<script type="text/javascript">
+			function fileDialog() {
+				console.log("clicked!");
+				$("input#102").click();
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<h1 class="header">This is a header!</h1>
+		</div>
+		<p>You can use this header for all of your header needs!</p>
+		<p>By default, Manila.css uses Poppins from the google fonts
+		repository, make sure to keep that in mind when developing a web
+		app with Manila.</p>
+
+		<div class="button">
+			<input class="button" type="button" name="button" value="This is a Button">
+		</div>
+		<p>Right now the button is a tad big, but I am working on a smaller version</p>
+
+		<div class="text" style="text-align: center">
+			<input type="text" placeholder="This is a Text Field">
+		</div>
+		<p>Text fields are roughly the same as buttons currently, except they
+		are very text-y, and field-y.</p>
+
+		<div style="text-align: center">
+			<input type="button" class="button" name="file" value="This is the File Input Dialog" onclick="fileDialog()">
+			<input id="102" class="file" style="display: none" type="file">
+		</div>
+		<p>It's actually a button that triggers a file dialog when clicked,
+		using a clever snippet of JQuery, A properly styled file dialog is
+		coming soon!</p>
+
+
+
+
+	</body>
+</html>
